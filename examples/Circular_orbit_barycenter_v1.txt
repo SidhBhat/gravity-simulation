@@ -1,0 +1,37 @@
+Equally massive bodies orbit around a common barycentre.
+(And a common circular path)
+
+##----------Start Configuration----------##
+### Define environment ###
+# The gravitaional constant
+global G = 4.5;
+
+# define the initial parameters of the bodies
+# here you can define as many bodies as you like in similar fasion
+global bodies;               # don't touch this line
+
+bodies(1).m = 25;            # mass
+bodies(1).x = [0,5];         # position
+bodies(1).v = [-2.372,0];    # velocity
+
+bodies(2).m = 25;            # mass
+bodies(2).x = [0,-5];        # position
+bodies(2).v = [2.372,0];     # velocity
+
+### Simulation Parameters
+# value of delta t
+global delta_t = 0.0001;
+# simulation time
+T = 10;
+
+### plot parameters
+# axis limits
+global lim  = 6;
+# normal markersize (size of least massive body)
+global marker_size = 15
+#trace marker size  (size of the path trace)
+global trace_size  = 3;
+# frames per unit time
+fp_unit            = 10;
+
+##----------End Configuration----------##
