@@ -5,33 +5,34 @@ pause on;
 ##----------Start Configuration----------##
 ### Define environment ###
 # The gravitaional constant
-global G = 4.5;
+global G = 0.4;
 
 # define the initial parameters of the bodies
 # here you can define as many bodies as you like in similar fasion
 global bodies;              # don't touch this line
 
-bodies(1).m = 10;           # mass
-bodies(1).x = [0,43.761];   # position
-bodies(1).v = [-14.359,0];  # velocity
+bodies(1).m = 1;       # mass
+bodies(1).x = [0.746156, 0];  # position
+bodies(1).v = [0, 0.324677];  # velocity
 
-bodies(2).m = 100;          # mass
-bodies(2).x = [0,38.761];   # position
-bodies(2).v = [-4.409,0];   # velocity
+bodies(2).m = 1;       # mass
+bodies(2).x = [-0.373078, 0.238313];  # position
+bodies(2).v = [0.764226, -0.162399];  # velocity
 
-bodies(3).m = 400;          # mass
-bodies(3).x = [0,-10.784];  # position
-bodies(3).v = [1.461,0];    # velocity
+bodies(3).m = 1;       # mass
+bodies(3).x = [-0.373078, -0.238313];  # position
+bodies(3).v = [-0.764226, -0.162399];  # velocity
 
 ### Simulation Parameters
 # value of delta t
-global delta_t = 0.001;
+global delta_t = 0.00001;
 # simulation time
-T              = 10;
+T              = 2
+;
 
 ### plot parameters
 # axis limits
-global lim         = 50;
+global lim         = 1;
 # normal markersize (size of least massive body)
 global marker_size = 15
 #trace marker size  (size of the path trace)
